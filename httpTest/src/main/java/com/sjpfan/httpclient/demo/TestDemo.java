@@ -50,8 +50,8 @@ public class TestDemo {
         CloseableHttpClient client = HttpClients.createDefault();
         HttpPost post = new HttpPost("http://56yunjia.com/service/PUser_L?_mt=json");
         List<NameValuePair> nvps = new ArrayList<NameValuePair>();
-        nvps.add(new BasicNameValuePair("userLoginName","shiwei"));
-        nvps.add(new BasicNameValuePair("userPassword","123123"));
+        nvps.add(new BasicNameValuePair("userLoginName","******"));
+        nvps.add(new BasicNameValuePair("userPassword","******"));
         post.setEntity(new UrlEncodedFormEntity(nvps));
         CloseableHttpResponse response = client.execute(post);
         try {
@@ -76,7 +76,7 @@ public class TestDemo {
     public void simplePostTest() throws IOException {
         try {
             Content content = Request.Post("http://56yunjia.com/service/PUser_L?_mt=json")
-                    .bodyForm(Form.form().add("userLoginName","shiwei").add("userPassword","111111").build())
+                    .bodyForm(Form.form().add("userLoginName","******").add("userPassword","******").build())
                     .execute().returnContent();
             System.out.println(content.asString());
         }catch (HttpResponseException e){
