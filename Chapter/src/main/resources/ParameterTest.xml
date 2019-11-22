@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "parameterSuite">
+    <test name = "paramTest">
+        <classes>
+            <parameter name="name" value="yao"/>
+            <parameter name="age" value="30"/>
+
+            <class name = "com.imooc.testng.ParameterTest"/>
+        </classes>
+    </test>
+
+</suite>

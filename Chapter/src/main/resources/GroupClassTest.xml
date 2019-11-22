@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "groupClassSuite">
+    <test name = "groupClassTest">
+        <groups>
+            <run>
+                <include name="classAC"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name = "com.imooc.testng.GroupClass.GroupClassA"/>
+            <class name = "com.imooc.testng.GroupClass.GroupClassB"/>
+            <class name = "com.imooc.testng.GroupClass.GroupClassC"/>
+        </classes>
+
+    </test>
+
+</suite>
